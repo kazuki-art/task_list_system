@@ -18,8 +18,9 @@
                 </tr>
                 <c:forEach var="user" items="${users}" varStatus="status">
                     <tr class="row${status.count % 2}">
-                        <td><c:out value="${user.mailaddress}" /></td>
                         <td><c:out value="${user.name}" /></td>
+                        <td><c:out value="${user.mailaddress}" /></td>
+
                         <td>
 
 

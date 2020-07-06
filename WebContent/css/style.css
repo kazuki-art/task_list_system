@@ -130,4 +130,20 @@ h1 a {
     color: #eeeeee;
 }
 
+table#task_list th {
+    font-weight: bold;
+    padding: 10px 2%;
+}
 
+table#task_list .task_name {
+    width: 30%;
+    padding: 10px 2%;
+}
+
+table#task_list .task_title {
+    width: 40%;
+}
+
+table#task_list .task_action {
+    width: 30%;
+}

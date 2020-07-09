@@ -151,3 +151,7 @@ table#task_list .task_limit {
 table#task_list .task_action {
     width: 13%;
 }
+
+pre {
+    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+}

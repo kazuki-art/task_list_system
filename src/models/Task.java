@@ -41,7 +41,7 @@ public class Task {
     @Column(name = "content", nullable = false)
     private String content;
 
-    @Column(name = "limit", length = 255, nullable = false)
+    @Column(name = "limit2", length = 255, nullable = false)
     private String limit;
 
     @Column(name = "start", length = 255, nullable = false)

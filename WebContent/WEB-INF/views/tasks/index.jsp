@@ -15,14 +15,16 @@
                     <th class="task_name">氏名</th>
 
                     <th class="task_title">タイトル</th>
+                    <th class="task_limit">締切日</th>
                     <th class="task_action">操作</th>
                 </tr>
                 <c:forEach var="task" items="${tasks}" varStatus="status">
                     <tr class="row${status.count % 2}">
-                        <td class="task_name"><c:out value="${report.employee.name}" /></td>
+                        <td class="task_name"><c:out value="${task.user.name}" /></td>
 
-                        <td class="task_title">${report.title}</td>
-                        <td class="task_action"><a href="<c:url value='/reports/show?id=${report.id}' />">詳細を見る</a></td>
+                        <td class="task_title">${task.title}</td>
+                        <td class="task_limit">${task.limit}</td>
+                        <td class="task_action"><a href="<c:url value='/tasks/show?id=${task.id}' />">詳細を見る</a></td>
                     </tr>
                 </c:forEach>
             </tbody>
@@ -44,4 +46,4 @@
         <p><a href="<c:url value='/tasks/new' />">新規タスクの登録</a></p>
 
     </c:param>
-</c:import>>
+</c:import>

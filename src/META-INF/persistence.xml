@@ -4,6 +4,7 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>models.User</class>
 		<class>models.Task</class>
+		<class>models.Routine</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/task_list_system?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8"/>

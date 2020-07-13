@@ -20,7 +20,7 @@
                 <c:forEach var="routine" items="${routines}" varStatus="status">
                     <tr class="row${status.count % 2}">
                         <td class="routine_name"><c:out value="${routine.user.name}" /></td>
-                        <td class="routine_date"><fmt:formatDate value='${routine.routine_date}' pattern='yyyy-MM-dd' /></td>
+                        <td class="routine_date">${report.date}</td>
                         <td class="routine_title">${report.title}</td>
                         <td class="routine_action"><a href="<c:url value='/routines/show?id=${routine.id}' />">詳細を見る</a></td>
                     </tr>

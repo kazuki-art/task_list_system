@@ -1,6 +1,6 @@
 package models;
 
-import java.sql.Date;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -38,7 +38,7 @@ public class Routine {
     private User user;
 
     @Column(name = "routine_date", nullable = false)
-    private Date routine_date;
+    private String routine_date;
 
     @Column(name = "title", length = 255, nullable = false)
     private String title;
@@ -63,11 +63,11 @@ public class Routine {
         this.user = user;
     }
 
-    public Date getRoutine_date() {
+    public String getRoutine_date() {
         return routine_date;
     }
 
-    public void setRoutine_date(Date routine_date) {
+    public void setRoutine_date(String routine_date) {
         this.routine_date = routine_date;
     }
 

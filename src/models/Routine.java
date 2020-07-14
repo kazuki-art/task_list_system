@@ -37,8 +37,12 @@ public class Routine {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @Column(name = "routine_date", nullable = false)
+    @Column(name = "routine_date", length = 255, nullable = false)
     private String routine_date;
+
+    @Column(name = "time_kubun", length = 255, nullable = false)
+    private String time_kubun;
+
 
     @Column(name = "title", length = 255, nullable = false)
     private String title;
@@ -69,6 +73,14 @@ public class Routine {
 
     public void setRoutine_date(String routine_date) {
         this.routine_date = routine_date;
+    }
+
+    public String getTime_kubun() {
+        return time_kubun;
+    }
+
+    public void setTime_kubun(String time_kubun) {
+        this.time_kubun = time_kubun;
     }
 
     public String getTitle() {
